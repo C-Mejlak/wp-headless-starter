@@ -9,7 +9,4 @@ function redirect_and_cors_setup() {
     if( $allow_cors ) {
         header("Access-Control-Allow-Origin: {$frontend_url}");
     }
-
-
-}
 }
