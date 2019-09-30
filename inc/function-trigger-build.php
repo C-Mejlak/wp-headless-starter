@@ -7,5 +7,7 @@ function fireFunctionOnSave($post_id) {
         return;
     }
     $trigger_url = get_option('trigger_url');
-    $response = Requests::post( $trigger_url );
+    if( !empty($trigger_url) ) {
+        $response = Requests::post( $trigger_url );        
+    }
 }
